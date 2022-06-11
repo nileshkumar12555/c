@@ -1,0 +1,22 @@
+/*Q).write a program to read three variables x, y ,z .use conditional statements and evaluate values of 
+variables a,b,c .perform the sum with two sets of variables .check the sums for equality and print different
+message..*/
+#include<stdio.h>
+int main()
+{
+    int a,b,c,x,y,z,m,n;
+    printf("ENTER VALUES X,Y,Z ::");
+    scanf("%d %d %d",&x,&y,&z);
+    a=(x>=5 ? 3 :4);
+    printf("\nENTER VALUE A : %d",a);
+    b=(y<=8 ? 10 :9);
+    printf("\nENTER VALUE B: %d",b );
+    c=(z==10 ? 20 : 30);
+    printf("\nENTER VALUE C : %d",c);
+    m=x+y+z;
+    n=a+b+c;
+    printf("\nADD of x,y,z is %d (m):",m);
+    printf("\nADD of a , b ,c is %d (n):",n);
+    printf("\n%s",m!=n ? " m & n NOT EQUAL " : "m &n ARE EQUAL");
+}
+
