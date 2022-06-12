@@ -1,0 +1,42 @@
+/******************************************************************************
+write a program to display the names of the days of a week
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  int day,i;
+  printf("\nENTER A NUMBER B/W 1 T0 7 :");
+  scanf("%d ",&day);
+  for(i=1;i<=day;i++)
+  switch(i)
+  {
+    case 1:
+    printf("\n 1st day of week sunday ");
+    break;
+    case 2:
+    printf("\n 2st day of week mon ");
+    break;
+    case 3:
+    printf("\n 3st day of week tue ");
+    break;
+    case 4:
+    printf("\n 4st day of week wed ");
+    break;
+    case 5:
+    printf("\n 5st day of week thu ");
+    break;
+    case 6:
+    printf("\n 6st day of week friday ");
+    break;
+    case 7:
+    printf("\n 7st day of week sat ");
+    break;
+    default:
+    printf("\n invalid day");
+  }
+
+    return 0;
+}
+
