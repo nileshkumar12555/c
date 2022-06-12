@@ -1,0 +1,45 @@
+/******************************************************************************
+
+write a program to calulate the salary of medical representative based on the sales. Bonus and incentive 
+to be offered to him will be based on total sales. if the sale exceeds Rs.1,00,000, follow the particular
+of table 1 otherwise follow table 2.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float bs,hra,bonus,incentive,ts,sale,da,cv;
+    printf("\n Enter Total sale in Rs::");
+    scanf("%f::",&sale);
+    if(sale>100000)
+    {
+        bs=3000;
+        hra=20 * bs/100;
+        da=110 * bs/100;
+        cv=500;
+        incentive=sale*10/100;
+        bonus =500;
+    }
+    else
+    {
+    bs=3000;
+    hra=20 * bs/100;
+    da=110 * bs/100;
+    cv=500;
+    incentive=sale * 5/100;
+    bonus = 200;
+    }
+    ts=bs+hra+da+cv+incentive + bonus;
+    printf("\n Total sales : %.2f",sale);
+    printf("\n Total salary : %.2f",bs);
+    printf("\n Total hra : %.2f",hra);
+    printf("\n Total da : %.2f",da);
+    printf("\n Total conveyance : %.2f",cv);
+    printf("\n Total incentive : %.2f",incentive);
+    printf("\n Total bouns : %.2f",bonus);
+    printf("\n Total grooss salary: %.2f",ts);
+    
+    return 0;
+}
+
