@@ -1,0 +1,46 @@
+/******************************************************************************
+
+write  a program to calculate the gross salary for the condition given below.
+BASIC SALARY (RS.)              DA (RS.)         HRA (RS.)      CONVEYANCE (RS.)
+>=5000                          110% of basic    20% of basic   500    
+bs=>3000 && bs<5000             100% of ""       15%  "" ""     400  
+bs<3000                         90%  "" ""       10% ""  ""     300 
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float bs,da,hra,cv,ts;
+    printf("\nENTER THE BASIC SALARY:::--");
+    scanf("%f :",&bs);
+    if(bs>=5000)
+    {
+        da=110 * bs/100;
+        hra=20 * bs/100;
+        cv=500;
+    }
+    else
+    if(bs>=3000 && bs<5000)
+    {
+        da=100 * bs/100;
+        hra=15 * bs/100;
+        cv=400;
+    }
+    else
+    {
+        if(bs<3000)
+        da=90 * bs/100;
+        hra=10 * bs/100;
+        cv=300;
+    }
+    ts=da+hra+cv+bs;
+    printf("\ntotal basic slary: %f",bs);
+    printf("\ntotal hra :%f",hra);
+    printf("\ntotal da: %f",da);
+    printf("\ntotal cv: %f",cv);
+    printf("\ntotal g slary: %f",ts);
+    
+    
+    return 0;
+}
+
