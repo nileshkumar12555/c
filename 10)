@@ -1,0 +1,29 @@
+/******************************************************************************
+
+write a program  to find the largest numbers out of three numbers .read the numbers through keyword
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int x,y,z;
+    printf("ENTER THE THREE NUMBER x , y ,z");
+    scanf("%d %d %d :",&x,&y,&z);
+    printf("finf the largest out of  three is:");
+    if(x>y)
+    {
+        if(x>z)
+        printf("largest value x %d",x);
+        else 
+        printf("largest value z %d",z);
+    }
+    else
+    {
+        if(z>y)
+        printf("largest value z %d",z);
+        else
+        printf("largest value y %d",y);
+    }
+}
+
