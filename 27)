@@ -1,0 +1,52 @@
+/******************************************************************************
+6 5 4 3 2 1 0
+5 4 3 2 1 0
+4 3 2 1 0
+3 2 1 0
+2 1 0
+1 0
+0
+*******************************************************************************/
+##1st method
+#include <stdio.h>
+
+int main()
+{
+  int i,j,c;
+  printf("ENTER THE NUMBER:");
+  scanf("%d",&i);
+  for(;i>=0;i--)
+  {
+    c=i;
+    printf("\n");
+    for(;;)
+    {
+      printf("%3d",c);
+      if(c==0)
+      break;
+      c--;
+    }
+  }
+  
+    return 0;
+}
+2nd method
+#include <stdio.h>
+
+int main()
+{
+  int i,j,x;
+  printf("ENTER THE NUMBER:");
+  scanf("%d",&x);
+  for(i=x;i>=0;i--)
+  {
+    printf("\n");
+    for(j=i;j>=0;j--)
+    {
+      printf("%3d",j);
+    }
+  }
+
+    return 0;
+}
+
