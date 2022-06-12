@@ -1,0 +1,27 @@
+/******************************************************************************
+
+write a program to find perfect cubes up to a given number
+//*1,8,27,64are perfect square cubes of 1,2,3 and 4
+
+*******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int i,j,k;
+  printf("enter a number:");
+  scanf("%d:",&k);
+  for(i=1;i<=k;i++)
+  {
+    for(j=1;j<=i;j++)
+    {
+      if(i==pow(j,3))
+      printf("\n number :%d its cubic %d",j,i);
+    }
+  }
+  
+
+    return 0;
+}
+
