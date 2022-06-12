@@ -1,0 +1,29 @@
+/******************************************************************************
+
+write a program  to find the small numbers out of three numbers
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c ,small;
+    printf("ENTER THE NUMBER");
+    scanf(" %d %d %d",&a,&b,&c);
+    if(a<b)
+    {
+        if(a<c)
+        small=a;
+        else
+        small=c;
+        
+    }
+    else
+    {
+        if(b<c)
+        small=b;
+        else
+        small=c;
+    }
+    printf(" the value small of %d %d %d if %d",a,b,c,small);
+}
+
