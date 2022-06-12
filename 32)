@@ -1,0 +1,21 @@
+/******************************************************************************
+write a program to calculate factorial of a given number .use while loop
+
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  int a,fact=1;
+  printf("ENTER THE VALUE FACTORIAL");
+  scanf("%d",&a);
+  while(a>=1)
+  {
+    printf("%d*",a);
+    fact=fact*a;
+    a--;
+  }
+  printf("\n value sum factorial:%d",fact);
+    return 0;
+}
