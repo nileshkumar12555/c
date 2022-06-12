@@ -1,0 +1,13 @@
+
+//FIND AVG
+#include <stdio.h>
+
+int main()
+{
+int a,b,c,d;
+printf("ENTER FIND AVG VALUE :");
+scanf("%f %f %f :",&a,&b,&c);
+d=a+b+c;
+printf("the value of :%f",d/3);
+return 0;
+}
