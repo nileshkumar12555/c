@@ -1,0 +1,27 @@
+/******************************************************************************
+
+write a program to counter numbers between 1 to 100 not divisible by 2,3 and 5.
+
+
+*******************************************************************************/
+#include <stdio.h>
+
+int
+main ()
+{
+  int x, c = 0;
+  printf (" \nnumbers  from between 1 to 100 not divisible by 2,3 and 5.\n");
+  for(x=1;x<=100;x++)
+  {
+    if(x%2!=0 && x%3!=0 && x%5!=0)
+    {
+      printf("%d\t",x);
+      c++;
+      
+    }
+    
+    
+  }
+  printf("\n total numbers : %d",c);
+}
+
