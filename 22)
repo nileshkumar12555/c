@@ -1,0 +1,21 @@
+/******************************************************************************
+
+write a program to generate the triangular number .
+note:-triangular number is nothing but summation of 1 to given number
+for example, when entered number is 5, its triangular number would number
+(1+2+3+4+5)=15.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  int n,j,tri_num=0;
+  printf("what triangular number  do you want:");
+  scanf("%d:",&n);
+  for(j=1;j<=n;j++)
+  tri_num=tri_num+j;
+  printf("what triangular number  do you want?: %d",tri_num);
+  return 0;
+}
+
