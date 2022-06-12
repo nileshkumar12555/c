@@ -1,0 +1,25 @@
+/******************************************************************************
+
+write a program to find the roots  of a quadratic equation by using if else condition.
+
+*******************************************************************************/
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c;
+    float x1,x2;
+    printf("Enter Three number");
+    scanf("%d %d %d ",&a,&b,&c);
+    if(b*b>4*a*c)
+    {
+        x1=-b+sqrt(b*b-4*a*c);
+        x2=-b-sqrt(b*b-4*a*c);
+        printf("\n x1=%f x2=%f",x1,x2);
+    }
+    else
+    printf("\n root are imaginary");
+
+    return 0;
+}
+
