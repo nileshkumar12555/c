@@ -1,0 +1,44 @@
+/******************************************************************************
+
+write a program to find the avg of six subjects and display the results as follow.
+AVG                     results
+>34 & <50               THIRD DIVISION
+>49 & <60               SECOND DIVISION
+=>60 & <75              FIRST DIVISION
+=>75 & <=100            DISTINCTION
+
+IF MARKS IN ANY SUBJECTS LESS THAN 35 Fails
+P C B M E H
+*******************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a,b,c,d,e,f,sum=0;
+    float avg;
+    printf("\nENTER MARKS\n");
+    printf("\nP C B M E H\n");
+    scanf(" %d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+    sum=a+b+c+d+e+f;
+    avg= sum/6;
+    printf("total : %d avg %f",sum,avg);
+    if(a<35 || b<35 || c<35 || d<35 || e<35 || f<35)
+    {
+        printf("\n Results : fail");
+        
+    }
+    if(avg>34 && avg<50)
+    printf("\n THIRD DIVISION");
+    else
+    if(avg>49 && avg<60)
+    printf("\n SECOND DIVISION");
+    else
+    if(avg>=60 && avg<75)
+    printf("\n fist DIVISION");
+    else
+    if(avg>=75 && avg<=100)
+    printf("\n DISTINCTION");
+
+    return 0;
+}
+
