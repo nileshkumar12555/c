@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+int i,age;
+printf("ENTER THE  VALUE");
+scanf("%d:",&i);
+if(i<10);
+printf("the number of less than 10");
+sleep(2);
+}
