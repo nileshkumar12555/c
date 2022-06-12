@@ -1,0 +1,24 @@
+/******************************************************************************
+
+NESTED for LOOPS
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  int a,b,c;
+  for(a=1;a<=2;a++)//outer lopop
+  {
+    for(b=1;b<=2;b++)//midile loop
+    {
+      for(c=1;c<=2;c++)//inner loop
+      printf("\n a=%d b=%d c=%d ::%d",a,b,c,a+b+c);
+      printf("\n inner loop ");
+    }
+    printf("\n outer loop");
+  }
+
+    return 0;
+}
+
