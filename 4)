@@ -1,0 +1,21 @@
+/******************************************************************************
+ * READ THE VALUE OF  A,B AND C KEYWORD. ADD THEM AND AFTER ADDITION CHECK IF IT IS IN THE VALUE 
+     INT THE RANGE 100 AND 200 OR NOT .PRINT THE SEPARATE FOR EACH
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,x;
+    printf("ENTER THE VALUE");
+    scanf("%d %d %d :::",&a,&b,&c);
+    printf("a=%d b=%d c=%d",a,b,c);
+    x=a+b+c;
+    if(x<=200 && x>=100)
+    printf("\n the sum %d of value btw the range 100 & 200",x);
+    else
+    printf("\n the sum of %d value btw the range out of",x);
+    return 0;
+}
+
