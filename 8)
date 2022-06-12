@@ -1,0 +1,26 @@
+/******************************************************************************
+
+
+write a program to calculate energy bill. read the starting and ending meter readings. if the consumed 
+electricty energy is grater than or equal to 200units the rate should be 2.50/unit otherwise 1.50/unit..
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int initial,final,consumed;
+    float total;
+    printf("Enter the initial and final reading");
+    scanf("%d %d ",&initial,&final);
+    consumed=final-initial;
+    if(consumed>=200)
+    total = consumed * 2.50;
+    else 
+    total= consumed * 1.50;
+    
+    printf("Total bill for %d units is %f ",consumed,total);
+    return 0;
+}
+
+
+
