@@ -1,0 +1,57 @@
+/******************************************************************************
+
+write a program to convert years into (1) minutes (2) hours (3) days (4) months (5) seconds 
+using swithch
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  long ch,min,hrs,ds,mon,yrs,se;
+  printf("\n\t[1] minutes");
+  printf("\n\t[2] hours");
+  printf("\n\t[3] days");
+  printf("\n\t[4] months");
+  printf("\n\t[5] seconds");
+  printf("\n\t[0] EXIT ");
+  
+  printf("\n\n\t ENTER TWO NUMBERS");
+  scanf("%ld",&ch);
+  if(ch>0 && ch<6)
+  {
+    printf("\nENTER years:");
+    scanf("%ld ",&yrs);
+  }
+  mon=yrs*12;
+  ds=mon*30;
+  ds=ds+yrs*5;
+  hrs=ds*24;
+  min=hrs*60;
+  se=min*60;
+  switch(ch)
+  {
+    case 1:
+    printf("\n minutes");
+    break;
+    case 2:
+    printf("\n hours");
+    break;
+    case 3:
+    printf("\n days");
+    break;
+    case 4:
+    printf("\n months");
+    break;
+    case 5:
+    printf("\n seconds");
+    break;
+    case 0:
+    printf("\n terminate by choice");
+    break;
+    default :
+    printf("\n Invalid choice");
+    return 0;
+    
+  }
+}
+
