@@ -1,0 +1,19 @@
+/******************************************************************************
+
+write a program to add 10 consecutive starting from 1 .the while loop..
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  int a=1,sum=0;
+  while(a<=10)
+  {
+    printf("%3d",a);
+    sum=sum+a;
+    a++;
+  }
+  printf("\nadd 10 conse...:%d",sum);
+
+    return 0;
+}
