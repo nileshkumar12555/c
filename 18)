@@ -1,0 +1,22 @@
+/******************************************************************************
+
+write a program to display letters from a to j using infinite for loop.use got to statements 
+to exit from the loop
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  char i=97;
+  for(; ;)
+  {
+    printf("%c\t",i++);
+    if(i==107)
+    goto stop;
+  }
+  stop:;
+ 
+    return 0;
+}
+
