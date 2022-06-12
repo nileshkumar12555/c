@@ -1,0 +1,52 @@
+/******************************************************************************
+
+write a program to display the starts as shown below.
+*
+* *
+* * *
+* * * *
+* * * * *
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  int i,j,x;
+  printf("how many lines starts (*) should be printed");
+  scanf("%d:",&x);
+  for(i=1;i<=x;i++)
+  {
+    for(j=1;j<=i;j++)
+    {
+      printf("*");
+    }
+    printf("\n");
+  }
+    return 0;
+}
+/*################reverse#########
+******
+*****
+****
+***
+**
+#include <stdio.h>
+
+int main()
+{
+  int i,j,x;
+  printf("how many lines starts (*) should be printed");
+  scanf("%d:",&x);
+  for(i=x;i>=1;i--)
+  {
+    for(j=i;j>=1;j--)
+    {
+      printf("*");
+    }
+    printf("\n");
+  }
+    return 0;
+}*/
+
+
