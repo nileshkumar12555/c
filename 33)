@@ -1,0 +1,14 @@
+/* write a program to print a string in the reverse order
+for example:- NILESH TO CONVERT HSELIN*/
+#include<stdio.h>
+
+int main()
+{
+    static char s[6];
+    int i;
+    puts("ENTER A STRING :");
+    gets(s);
+    puts("REVERSE A STRING:");
+    for(i=5;i>=0;i--)
+        printf("%c",s[i]);
+}
