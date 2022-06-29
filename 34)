@@ -1,0 +1,18 @@
+/*write a program to display the elements of two arrays in two separate columns and add their 
+corresponding elements .display the result of addition in the third column
+num:-24,34,12,44,56,17
+num1:-12,24,35,78,85,22*/
+#include <stdio.h>
+
+int main()
+{
+  int i,num[]={24,34,12,44,56,17};
+  int num1[]={12,24,35,78,85,22};
+  printf("Element First Array - element Secon Array addition\n");
+  for(i=0;i<=5;i++)
+  {
+    printf("\n\t\t %d + %d = \t %d",num[i],num1[i],num[i]+num1[i]);
+  }
+  
+}
+
