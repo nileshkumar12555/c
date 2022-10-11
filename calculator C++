@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int NUM1,NUM2;
+    char oper;
+    cout<<"Enter The Value +,-,*,/"<<endl;
+    cin>>oper;
+    cout<<"Enter the value a and b"<<endl;
+    cin>>NUM1>>NUM2;
+    switch (oper)
+    {
+    case '+':
+         cout << NUM1 << " + " << NUM2 << " = " << NUM1 + NUM2;
+         break;
+    case '-':
+        cout << NUM1 << " - " << NUM2 << " = " << NUM1 - NUM2;
+         break;
+    case '*':
+        cout << NUM1 << " * " << NUM2 << " = " << NUM1 * NUM2;
+         break;
+    case '/':
+        cout << NUM1 << " / " << NUM2 << " = " << NUM1 / NUM2;
+         break;
+
+         default:
+             cout<<"not  work calculator ";
+    }
+}
