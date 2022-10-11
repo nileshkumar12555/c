@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int vote,age;
+    char oper;
+    cout<<"ENTER THE YOUR AGE"<<endl;
+    cin>>age;
+    cout<<"YOU ENTER FIRST LETTER :-BJP,JDU,RJD,AP,OTHER"<<endl;
+    cin>>oper;
+    /*cout<<"ENTER THE PARTY VOTE"<<endl;
+    cin>>vote;*/
+    if(age>=18)
+    {
+        switch (oper)
+        {
+            case 'B':
+                cout<<"THANK YOU VOTING FOR BJP";
+                break;
+            case 'J':
+                cout<<"THANK YOU VOTING FOR JDU";
+                break;
+            case 'R':
+                cout<<"THANK YOU VOTING FOR RJD";
+                break;
+            case 'A':
+                cout<<"THANK YOU VOTING FOR AP";
+                break;
+            default:
+                cout<<"THANK YOU VOTING FOR OTHER ";
+    }
+    }
+    else
+    {
+         cout<<"you can not vote";
+    }
+}
